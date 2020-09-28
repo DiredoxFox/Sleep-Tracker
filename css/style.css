@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    background-color: #DAE1EC;
+}
+
+/*Sleep Schedule*/
+.sleep-schedule{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 20vw;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 2px rgb(78, 78, 78,0.2);
+}
+
+.sleep-schedule p{
+    margin-top: 0;
+}
+
+.sleep-schedule h6{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.sleep-schedule h6 span{
+    color: #66bfbf;
+    cursor: pointer;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+h5{
+    margin-top: 0;
+}
+
+.upper h5 span{
+    color: #66bfbf;
+    cursor: pointer;
+}
+
+/*Chart*/
+.chart{
+    position: absolute;
+    top: 63%;
+    left: 35%;
+    width: 50vw;
+    height: 60vh;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 2px rgb(78, 78, 78,0.2);
+}
+
+.chart p{
+    margin-top: 0;
+}
+
+.chart h5{
+    margin-bottom: 0;
+}
+
+#chart{
+    position: relative;
+    margin-top: 60px;
+    width: 50vw;
+    height: 43vh;
+    border-radius: 10px;
+    color: black;
+}
+
+#chart #up{
+    position: absolute;
+    width: 90%;
+    bottom: 98%;
+    margin-left: 50px;
+    border: none;
+    border-top: solid black 1px;
+}
+
+#chart #middle{
+    position: absolute;
+    width: 90%;
+    margin-left: 50px;
+    bottom: 51.5%;
+    border: none;
+    border-top: solid black 1px;
+}
+
+#chart #bottom{
+    position: absolute;
+    width: 90%;
+    margin-left: 50px;
+    bottom: 4.8%;
+    border: none;
+    border-top: solid black 1px;
+}
+
+.numbers{
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 100%;
+    float: left;
+  }
+  
+  .numbers li{
+    list-style: none;
+    height: 150px;
+    position: relative;
+    bottom: 145px;
+  }
+  
+  .numbers span{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  
+  .bars{
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 700px;
+    height: 300px;
+    border-radius: 5px;
+  }
+  
+  .bars li{
+    display: table-cell;
+    width: 100px;
+    height: 300px;
+    position: relative;
+  }
+  
+  .bars span{
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+  }
+  
+  .bars .bar{
+    display: block;
+    background: #66bfbf;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 25px;
+    text-align: center;
+  }
+  
+  .bars .bar:before{
+    content: attr(data-percentage) '%';
+    position: absolute;
+    background-color: #056674;
+    transform: translate(-50%,-50%);
+    top: 30px;
+    padding: 13px 5px;
+    border-radius: 100px;
+    color: #fff;
+  }
+
+  .pagination{
+      position: fixed;
+      display: flex;
+      top: 93%;
+      left: 45%;
+  }
+
+  .pagination li{
+      color: #056674;
+      cursor: pointer;
+  }

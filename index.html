@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="sleep-schedule">
+        <div class="upper">
+            <h5>Sleep schedule</h5>
+            <h5><span>Set</span></h5>
+        </div>
+        <p>time</p>
+        <h6>Learn more about <span>sleep score</span></h6>
+    </div>
+    <div class="chart">
+        <h5>Sleep Score</h5>
+        <p>average</p>
+        <div id="chart">
+            <ul class="numbers">
+                <hr id="up">
+                <li><span>100%</span></li>
+                <hr id="middle">
+                <li><span>50%</span></li>
+                <hr id="bottom">
+                <li><span>0%</span></li>
+              </ul>
+              <ul class="bars">
+                <li><div class="bar" data-percentage="50"></div><span>M</span></li>
+                <li><div class="bar" data-percentage="30"></div><span>T</span></li>
+                <li><div class="bar" data-percentage="60"></div><span>W</span></li>
+                <li><div class="bar" data-percentage="100"></div><span>Th</span></li>
+                <li><div class="bar" data-percentage="25"></div><span>F</span></li>
+                <li><div class="bar" data-percentage="30"></div><span>S</span></li>
+                <li><div class="bar" data-percentage="40"></div><span>S</span></li>
+              </ul>
+              <div class="pagination">
+                  <li href="#"><a></a></li>
+                  <li href="#"><a></a></li>
+                  <li href="#"><a></a></li>
+                  <li href="#"><a></a></li>
+                  <li href="#"><a></a></li>
+              </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function(){
+          $('.bars li .bar').each(function(key, bar){
+            var percentage = $(this).data('percentage');
+            $(this).animate({
+              'height' : percentage + '%'
+            },1000);
+          });
+        });
+        </script>
+    
+</body>
+</html>
